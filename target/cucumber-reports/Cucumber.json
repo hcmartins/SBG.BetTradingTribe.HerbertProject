@@ -1,0 +1,441 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 498200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Create a new Fixture",
+        "description": "",
+        "id": "create-and-delete-a-fixture;create-a-new-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 754427200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The EndPointUrl is up and running",
+            "match": {
+              "location": "Test_Steps.the_EndPointUrl_is_up_and_running_on_port()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4667980700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a user performs a post request to \"/fixture\" with below details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/fixture",
+                  "offset": 35
+                }
+              ],
+              "location": "Test_Steps.a_user_performs_a_post_request_to_with_below_details(String,String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "{\"fixtureId\":\"5\",\"fixtureStatus\": {\"displayed\":true,\"suspended\":true},\"footballFullState\": {\"homeTeam\":\"test string\",\"awayTeam\":\"test string\",\"finished\":true,\"gameTimeInSeconds\":7,\"goals\":[ {\"clockTime\":7,\"confirmed\":true,\"id\":7,\"ownGoal\":true,\"penalty\":true,\"period\":\"test string\",\"playerId\":7,\"teamId\":\"test string\"}],\"period\":\"test string\",\"possibles\":[ {}],\"corners\":[ {}],\"redCards\":[ {}],\"yellowCards\":[ {}],\"startDateTime\":\"test string\",\"started\":true,\"teams\":[ {\"association\":\"test string\",\"name\":\"test string\",\"teamId\":\"test string\"}]}}  "
+            }
+          },
+          {
+            "result": {
+              "duration": 1962700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "response contains \"Fixture has been added\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fixture has been added",
+                  "offset": 19
+                }
+              ],
+              "location": "Test_Steps.response_contains_String(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 73500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Delete a Fixture",
+        "description": "",
+        "id": "create-and-delete-a-fixture;delete-a-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 488000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The EndPointUrl is up and running",
+            "match": {
+              "location": "Test_Steps.the_EndPointUrl_is_up_and_running_on_port()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44793400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "a user performs a delete request to \"/fixture/5\" with below details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/fixture/5",
+                  "offset": 37
+                }
+              ],
+              "location": "Test_Steps.delete_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "response contains \"Fixture has been deleted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fixture has been deleted",
+                  "offset": 19
+                }
+              ],
+              "location": "Test_Steps.response_contains_String(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create and delete a fixture",
+    "description": "",
+    "id": "create-and-delete-a-fixture",
+    "keyword": "Feature",
+    "uri": "Tasks/CreateAndDeleteFixture.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 69900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Get All fixtures",
+        "description": "",
+        "id": "retrieve-all-fixtures;get-all-fixtures",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1336600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The EndPointUrl is up and running",
+            "match": {
+              "location": "Test_Steps.the_EndPointUrl_is_up_and_running_on_port()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43869200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a user performs a get request to \"/fixtures\" with parameters \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/fixtures",
+                  "offset": 34
+                },
+                {
+                  "val": "",
+                  "offset": 62
+                }
+              ],
+              "location": "Test_Steps.a_user_performs_a_get_request_to_with_parameters(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 585032100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "response contains 3 fixtures",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 18
+                }
+              ],
+              "location": "Test_Steps.counting_fixtures(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Retrieve all fixtures",
+    "description": "",
+    "id": "retrieve-all-fixtures",
+    "keyword": "Feature",
+    "uri": "Tasks/RetrieveAllFixtures.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 61700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Store a new fixture and assert that it contains teamId",
+        "description": "",
+        "id": "store-a-new-fixture;store-a-new-fixture-and-assert-that-it-contains-teamid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 403800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The EndPointUrl is up and running",
+            "match": {
+              "location": "Test_Steps.the_EndPointUrl_is_up_and_running_on_port()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4077218700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a user performs a post request to \"/fixture\" with below details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/fixture",
+                  "offset": 35
+                }
+              ],
+              "location": "Test_Steps.a_user_performs_a_post_request_to_with_below_details(String,String)"
+            },
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "{\"fixtureId\":\"6\",\"fixtureStatus\": {\"displayed\":true,\"suspended\":true},\"footballFullState\": {\"homeTeam\":\"test string\",\"awayTeam\":\"test string\",\"finished\":true,\"gameTimeInSeconds\":7,\"goals\":[ {\"clockTime\":7,\"confirmed\":true,\"id\":7,\"ownGoal\":true,\"penalty\":true,\"period\":\"test string\",\"playerId\":7,\"teamId\":\"test string\"}],\"period\":\"test string\",\"possibles\":[ {}],\"corners\":[ {}],\"redCards\":[ {}],\"yellowCards\":[ {}],\"startDateTime\":\"test string\",\"started\":true,\"teams\":[ {\"association\":\"test string\",\"name\":\"test string\",\"teamId\":\"HOME\"}]}}  "
+            }
+          },
+          {
+            "result": {
+              "duration": 302900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "response contains \"Fixture has been added\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fixture has been added",
+                  "offset": 19
+                }
+              ],
+              "location": "Test_Steps.response_contains_String(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17337200,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 10,
+                "value": "#Given The EndPointUrl is up and running"
+              }
+            ],
+            "line": 11,
+            "name": "a user performs a get request to \"/fixture\" with parameters \"/6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/fixture",
+                  "offset": 34
+                },
+                {
+                  "val": "/6",
+                  "offset": 61
+                }
+              ],
+              "location": "Test_Steps.a_user_performs_a_get_request_to_with_parameters(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24135400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "response contains 1 \"footballFullState.teams.teamId\" tag",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 18
+                },
+                {
+                  "val": "footballFullState.teams.teamId",
+                  "offset": 21
+                }
+              ],
+              "location": "Test_Steps.response_contains_tag(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 50000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Delete a Fixture",
+        "description": "",
+        "id": "store-a-new-fixture;delete-a-fixture",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 532600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "The EndPointUrl is up and running",
+            "match": {
+              "location": "Test_Steps.the_EndPointUrl_is_up_and_running_on_port()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23995700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a user performs a delete request to \"/fixture/6\" with below details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/fixture/6",
+                  "offset": 37
+                }
+              ],
+              "location": "Test_Steps.delete_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 532900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "response contains \"Fixture has been deleted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fixture has been deleted",
+                  "offset": 19
+                }
+              ],
+              "location": "Test_Steps.response_contains_String(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Store a new fixture",
+    "description": "",
+    "id": "store-a-new-fixture",
+    "keyword": "Feature",
+    "uri": "Tasks/StoreNewFixture.feature"
+  }
+]
